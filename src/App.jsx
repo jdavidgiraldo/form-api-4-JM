@@ -123,7 +123,7 @@ function App() {
   }, [])
 
   return (
-    <main className='font-["Roboto"] pb-60 bg-primary'>
+    <main className='font-["Roboto"] pb-60 bg-primary min-h-screen'>
       <Header changeShowModal={changeShowModal} />
       <UserForm
         isShowModal={isShowModal}
