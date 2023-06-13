@@ -1,9 +1,9 @@
 .swal-modal {
-  background-color: #F2A71B;
+  background-color: #f2a71b;
 }
 
 .swal-icon--success:before {
-  background-color: #F2A71B;
+  background-color: #f2a71b;
   top: -7px;
   left: -33px;
   -webkit-transform: rotate(-45deg);
@@ -13,10 +13,10 @@
 }
 
 .swal-icon--success:after {
-  background-color: #F2A71B;
-  content:'';
+  background-color: #f2a71b;
+  content: '';
   border-radius: 50%;
-  position:absolute;
+  position: absolute;
   width: 60px;
   height: 120px;
   -webkit-transform: rotate(45deg);
@@ -26,7 +26,7 @@
 .swal-icon--success__hide-corners {
   width: 5px;
   height: 90px;
-  background-color: #F2A71B;
+  background-color: #f2a71b;
   padding: 1px;
   position: absolute;
   left: 28px;
@@ -37,7 +37,7 @@
 }
 
 .swal-title {
-  color: #011F26;
+  color: #011f26;
   font-weight: 600;
   text-transform: none;
   position: relative;
@@ -50,42 +50,81 @@
 }
 
 .swal-icon--error {
-  border-color: #011F26;
-  -webkit-animation: animateErrorIcon .5s;
-  animation: animateErrorIcon .5s;
+  border-color: #011f26;
+  -webkit-animation: animateErrorIcon 0.5s;
+  animation: animateErrorIcon 0.5s;
 }
 
 .swal-icon--error__line {
-    position: absolute;
-    height: 5px;
-    width: 47px;
-    background-color: #011F26;
-    display: block;
-    top: 37px;
-    border-radius: 2px;
+  position: absolute;
+  height: 5px;
+  width: 47px;
+  background-color: #011f26;
+  display: block;
+  top: 37px;
+  border-radius: 2px;
 }
 
 .swal-button {
-  background-color: #025E73;
-  color: #fff;
+  background-color: #025e73;
+  color: #000000;
   border: none;
   box-shadow: none;
   border-radius: 5px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
   padding: 10px 24px;
   margin: 0;
   cursor: pointer;
 }
 
+.swal-text {
+  font-size: 16px;
+  position: relative;
+  float: none;
+  line-height: normal;
+  vertical-align: top;
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+  padding: 0 10px;
+  font-weight: 600;
+  color: #011f26;
+  max-width: calc(100% - 20px);
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
 .swal-icon--success__ring {
   width: 80px;
   height: 80px;
-  border: 4px solid #025E73;
+  border: 4px solid #025e73;
   border-radius: 50%;
   box-sizing: content-box;
   position: absolute;
   left: -4px;
   top: -4px;
   z-index: 2;
+}
+
+.swal-icon--warning {
+  border-color: #fc2306;
+  -webkit-animation: pulseWarning 0.75s infinite alternate;
+  animation: pulseWarning 0.75s infinite alternate;
+}
+
+@keyframes pulseWarning {
+  0% {
+    border-color: #fa0303;
+  }
+
+  100% {
+    border-color: #025e73;
+  }
+}
+
+.swal-icon--warning__body, .swal-icon--warning__dot {
+  position: absolute;
+  left: 50%;
+  background-color: #fa0303;
 }
