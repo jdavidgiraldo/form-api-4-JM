@@ -68,7 +68,8 @@ function App() {
           getAllUsers()
           axios
             .delete(url)
-            .then((res) => {
+            .then(() => {
+              getAllUsers()
               swal({
                 text: 'Usuario eliminado',
                 icon: 'success',
@@ -116,7 +117,7 @@ function App() {
 
   const showEditUserAlertSucces = () => {
     swal({
-      title: 'Usuario editado con éxito',
+      title: 'Usuario editado',
       icon: 'success',
       button: 'OK',
     })

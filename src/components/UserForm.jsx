@@ -57,7 +57,7 @@ const ModalForm = ({
           <input
             placeholder='Ingresa tu nombre...'
             type='text'
-            className='bg-gray-100 outline-none p-2'
+            className='bg-gray-100 outline-none p-2 rounded-xl'
             {...register('first_name')}
           />
         </div>
@@ -68,7 +68,7 @@ const ModalForm = ({
           <input
             placeholder='Ingresa tu apellido...'
             type='text'
-            className='bg-gray-100 outline-none p-2'
+            className='bg-gray-100 outline-none p-2 rounded-xl'
             {...register('last_name')}
           />
         </div>
@@ -79,7 +79,7 @@ const ModalForm = ({
           <input
             placeholder='Ingresa tu correo...'
             type='text'
-            className='bg-gray-100 outline-none p-2'
+            className='bg-gray-100 outline-none p-2 rounded-xl'
             {...register('email')}
           />
         </div>
@@ -90,7 +90,7 @@ const ModalForm = ({
           <input
             placeholder='Ingresa tu contraseña...'
             type='password'
-            className='bg-gray-100 outline-none p-2'
+            className='bg-gray-100 outline-none p-2 rounded-xl'
             {...register('password')}
           />
         </div>
@@ -101,7 +101,7 @@ const ModalForm = ({
           <input
             placeholder='Ingresa tu contraseña...'
             type='date'
-            className='bg-gray-100 outline-none p-2'
+            className='bg-gray-100 outline-none p-2 rounded-xl'
             {...register('birthday')}
           />
         </div>
@@ -113,7 +113,7 @@ const ModalForm = ({
           <input
             placeholder='Ingresa URL de imagen...'
             type='text'
-            className='bg-gray-100 outline-none p-2'
+            className='bg-gray-100 outline-none p-2 rounded-xl'
             {...register('image_url')}
           />
         </div>

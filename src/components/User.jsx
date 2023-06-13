@@ -28,7 +28,7 @@ const User = ({ user, deleteUser, changeShowModal, setIsUserToUpdate }) => {
             <span className='text-[#BFB78F]'>
               <i className='bx bxs-gift mr-2'></i>
             </span>
-            {user.birthday || 'No fecha'}
+            {user.birthday || 'No definido'}
           </span>
         </div>
 
