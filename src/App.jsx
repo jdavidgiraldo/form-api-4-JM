@@ -57,7 +57,6 @@ function App() {
   const deleteUser = (id) => {
     const url = BASE_URL + `/users/${id}/`
 
-    axios.delete(url)
     swal({
       title: 'Eliminar',
       text: '¿Confirma, deseas eliminar el usuario?',
@@ -67,10 +66,15 @@ function App() {
       .then((res) => {
         if (res) {
           getAllUsers()
-          swal({
-            text: 'Usuario eliminado',
-            icon: 'success',
-          })
+          axios
+            .delete(url)
+            .then((res) => {
+              swal({
+                text: 'Usuario eliminado',
+                icon: 'success',
+              })
+            })
+            .catch((err) => console.log(err))
         } else {
           swal({
             text: 'Usuario no eliminado',
